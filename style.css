@@ -1,129 +1,1163 @@
-.logo{
- width:355px;
- height:102px;
-  background-repeat: no-repeat;
-  background-position:left;
+ ------------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-#nav{
-font-size: 30px;
-margin: 10px;
-overflow:hidden;
-display: flex;
-flex-direction: column;
-float: right;
+
+html,
+html {
+  scroll-behavior: smooth;
 }
 body {
-  background-image: url("Kinshasa.png");
-  background-repeat: no-repeat;
-  background-size:1920px 700px; 
-  background-position-x: 0px;
-  background-position-y: 0px;
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
-ul {
-  list-style: none;
-  
+/* ------------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------ */
+
+.row {
+  margin: 0 auto;
 }
 
-#nav li{
-  float: left;
-  margin-left: 10px;
-  }
+section {
+  padding: 80px 0;
+}
 
-#nav a{
-  text-decoration:none;
+/* ------- HEADINGS --------*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 250%;
+  word-spacing: 4px;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 250%;
+  margin-bottom: 30px;
+}
+
+h2:after {
   display: block;
-  color:#FFFFFF;
-  display:inline-block;
-  margin-right: 15px;
-  font-family: 'Montserrat', sans-serif;
+  height: 2px;
+  background-color: #FF8121;
+  content: " ";
+  width: 80px;
+  margin-top: 10px;
 }
-#homelink{
-  text-decoration:none;
-  font-size:30px;
-  color:#FFFFFF;
-  text-align:center;
-  font-family: 'Montserrat', sans-serif;
-  
+
+h3 {
+  font-size: 150%;
+  margin-bottom: 15px;
 }
-#about{
-  padding-top:220px;
+
+h3:after {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  content: " ";
+  width: 80px;
+  margin-top: 10px;
+}
+
+/* ------- LINKS --------*/
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  /*! padding-bottom: 1px; */
+  /*! border-bottom: 1px solid #e67e22; */
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+}
+
+
+/* HEADER RE-DESIGN */
+#img{
+        width:20%;
+        height:10%;
+    }
+    
+    #li{
+        font-size:20px;
+    }
+     span{
+   color:#f0981d;
+ }
+.location{
+  color:white;
+}
+header #donateBtn {
+  font-size: 25px;
+  background-color: #f0981d;
+  border-color: #f0981d;
+  color:white;
+  width: 150%;
+  border-radius: 40px;
+}
+
+/* END OF HEADER RE-DESIGN */
+
+
+
+/* ------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------ */
+
+header button {
+  font-size: 30px;
+  background-color: #f0981d;
+  border-color: #f0981d;
+  width: 150%;
+  border-radius: 40px;
+}
+
+header span {
+  color: #f0981d;
+}
+
+header {
+  background-image: url(../img/header-background-image1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 62px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+/*ABOUT SECTION*/
+[about_us] {
+  padding: 70px;
+  height: 350px;
+  color: #fff;
+  line-height: 20px;
+  background: #ffeb3be3;
+}
+
+[about_us] div {
+  padding: 20px;
+}
+
+img[about_image] {
+  float: right;
+  width: 40%;
+  height: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+[about_us] button {
+  padding: 7px;
+  border: none;
+  background-color: orange;
+  margin: 20px 0;
+}
+
+
+/*3_ITEMS AND BE A VOLUNTEER SECTION*/
+[items_3] {
+  padding: 70px;
+
+}
+
+[items_3_view] td {
   text-align: center;
-  font-size:60px;
-  font-family: 'Dosis',  sans-serif;
-  color: #FFFFFF;
-  
-}
-#intro.p{
-  float:left;
-  padding-left: 40px;
-  
-}
-p{
-  margin-left: 25px;
+  padding: 50px;
 }
 
-h2{
-  margin-left: 25px;
-}
-.reading{
-  float:right;
-  padding:20px 20px 20px 0px;
-  width:600px;
-  height:430px;
-}
-#intro{
- padding-top: 40px;
- font-size: 20px;
- font-family: 'Open Sans', sans-serif;
-}
-#nav a:hover{
-  color:#FFA200;
+[make_donation] {
+  width: 33%;
+
 }
 
-.the-partners{
-  font-size: 40px;
-  font-family: 'Dosis', medium, sans-serif;
-  text-align:center;
-  
-  float:center;
+[volunteer] {
+  width: 34%;
+  background: orange;
+  border-radius: 50px;
 }
 
-.column{
-  flex:30%;
-  padding: 0 5px;
-  text-align:center;
+[sponsorship] {
+  width: 33%;
 }
 
-.column img{
-  margin-top:8px;
-  vertical-align: 10px;
-}
-#slack{
-  width:200px;
-  height: 70px;
-  margin-left:15px;
-  margin-right:15px;
+[volunteer_section] {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(../img/cake1.jpg);
+  opacity: 0.8;
 }
 
-#brand{
-  width:350px;
-  height:75px;
+[volunteer_section_view],
+[items_3_view] {
+  width: 100%;
+
 }
 
-#flutter{
-  width: 341px;
-  height:90px;
+[for_image] {
+  width: 50%;
+}
+
+[message_form] {
+  width: 50%;
+  color: #fff;
+}
+
+[message_form] input[type="text"],
+[message_form] input[type="email"],
+[message_form] textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  height: 25px;
+  line-height: 20px;
+
+}
+
+[message_form] textarea {
+  height: 60px;
+}
+
+[message_form] label {
+  line-height: 40px;
+}
+
+[message_form] input[type="button"] {
+  color: orange;
+  background: #ddd;
+  margin-top: 15px;
+  padding: 7px;
+  border: none;
+}
+
+[for_image] img {
+  margin-left: 120px;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* END OF VOLUNTEER SECTION*/
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 40px;
+}
+
+.logo-black {
+  /*display: none;*/
+  height: 50px;
+  width: auto;
+  float: left;
+  /*margin: 5px 0;*/
+  margin-top: 35px;
+  margin-left: 40px;
+}
+
+/* Main navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  margin-right: 100px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  font-family: Montserrat;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+  color: #e67e22;
+}
+
+.header-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 60%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Dosis;
+  font-size: 150%;
+}
+
+.header-text-box span {}
+
+.orange-text {
+  color: #e67e22;
+}
+
+/* ----------------------------------------------- */
+/* VISION AND DONATION */
+/* ----------------------------------------------- */
+
+.section-vision {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.vision-3-boxes {
+  width: 80%;
+  height: 300px;
+  margin-top: -130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.vision {
+  width: 40%;
+  height: 300px;
+  background-color: #e67e22;
+}
+
+.donate {
+  width: 30%;
+  height: 300px;
+  background-color: #FE982D;
+}
+
+.volunteer {
+  width: 30%;
+  height: 300px;
+  background-color: #F2B141;
+}
+
+.vision h3 {
+  margin-top: 50px;
+  margin-left: 15%;
+  font-family: Dosis;
+  font-size: 150%;
+}
+
+.vision-notes {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  font-family: Dosis;
+}
+
+.donate h3 {
+  margin-top: 50px;
+  margin-left: 15%;
+  font-family: Dosis;
+  font-size: 150%;
+}
+
+.donate-notes {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  font-family: Open Sans;
+  font-size: 17px;
+}
+
+.donate-button {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  margin: 20px 0 0 15%;
+  -webkit-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  -moz-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+}
+
+.donate-button p {
+  position: absolute;
+  font-family: Open Sans;
+  color: #000;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.volunteer h3 {
+  margin-top: 50px;
+  margin-left: 15%;
+  font-family: Dosis;
+  font-size: 150%;
+}
+
+.volunteer-notes {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  font-family: Open Sans;
+  font-size: 17px;
+}
+
+.volunteer-button {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  margin: 20px 0 0 15%;
+  -webkit-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  -moz-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+}
+
+.volunteer-button p {
+  position: absolute;
+  font-family: Open Sans;
+  color: #000;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+/* ----------------------------------------------- */
+/* ABOUT US */
+/* ----------------------------------------------- */
+
+.section-about-us {
+  width: 100%;
+  height: 500px;
+  background-color: #F2B141;
+}
+
+.about-us-2-boxes {
+  width: 85%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -50px;
+}
+
+.about-us {
+  width: 60%;
+  height: 100%;
+}
+
+.about-us h2 {
+  margin-left: 5%;
+  font-family: Dosis;
+}
+
+.about-us-notes {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 5%;
+  font-family: Open Sans;
+  font-size: 21px;
+}
+
+.about-us-button {
+  width: 180px;
+  height: 60px;
+  background-color: #FF8121;
+  margin: 20px 0 0 5%;
+  -webkit-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  -moz-box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+  box-shadow: 0px 0px 15px -3px rgba(138, 112, 138, 1);
+}
+
+.about-us-button p {
+    position: absolute;
+    font-family: Open Sans;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 35px;
+} 
+
+  position: absolute;
+  font-family: Open Sans;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 35px;
+}
+
+
+.about-us-img {
+  width: 40%;
+  height: 100%;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.about-main-img {
+  width: 500px;
+  height: 370px;
+  background-image: url(../img/about-us-img.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 35px 35px 0px -2px rgba(255, 255, 255, 0.07);
+  -moz-box-shadow: 35px 35px 0px -2px rgba(255, 255, 255, 0.07);
+  box-shadow: 35px 35px 0px -2px rgba(255, 255, 255, 0.07);
+}
+
+
+#about{
+	background-color:orange; #ffb833;
+	color: #fff;
+
+}
+
+.text{
+	float:left;
+	width:40%;
+	padding-left: 5%;
+}
+.pic{
+	float:right;
+	width:49%;
+}
+
+ h2,p{
+	font-family:georgia;
+
+}
+
+.text h2{
+	font-size:35px;
+
+}
+
+.text p{
+	line-height:1.5em;
+	font-size: 23px;
+}
+
+.pic {
+	margin-top: 4%;
+}
+.pic img{
+	border-radius:10px;
+	box-shadow: 17px 19px #ffc14d;
+}
+#readMore{
+	background-color:#ffa600;
+	color: #fff;
+	border-color:#ffa600;
+	height: 40px; 
+	font-family: montserrat;
+	font-size: 20px;
+	border:none;
+	width:37%;
+	box-shadow: 0 0 10px rgba(0, 0, 0 , .2);
 }
 
 hr{
-  display: block;
-  width:3.5%;
-  margin-top:-30px;
-  margin-left:25px;
- border: 2px solid #FFA200;
+	color:#e0e0e0;
+	background-color: #e0e0e0; 
+	border-color: #e0e0e0;
+	margin: 0 auto 20px auto;
+	width: 100px !important;
+	/*border-width:10px;
+	width:70%;*/
+	margin-left:-0.5%;
+	border-color: #ffa600;
+
 }
 
-#line2{
-  margin-left:650px;
+
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero3.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /*background-attachment: fixed;*/
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  /*text-align:center;*/
+}
+
+.text-align {
+  margin-left: 550px;
+  margin-top: 150px;
+}
+
+.wraper {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section3 {
+  margin: 2rem 6rem;
+  display: flex;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+}
+
+/* change color to corect one */
+.donate {
+  background-color: #fe982d;
+}
+
+/* change color to corect one */
+.vision {
+  background-color: #ff8121;
+  color: white;
+}
+
+.our {
+  border-bottom: 2px solid white;
+}
+
+/* change color to corect one */
+.volunteer {
+  background-color: #f2b141;
+}
+
+.donatebtn {
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: large;
+}
+
+.sec3 {
+  padding: 2rem;
+}
+
+.sec3 h3 {
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 550px) {
+  #section3 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+  }
+
+  .wraper {
+    display: block;
+  }
+}
+
+
+/*MAKING THE SCREEN RESPONSIVE*/
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .steps-box {
+    margin-top: 10px;
+  }
+
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+
+  .works-steps {
+    margin-bottom: 40px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+
+  .city-feature {
+    font-size: 90%;
+  }
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .plan-price {
+    font-size: 250%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+}
+
+/* section5 css */
+
+#section5 {
+  display: flex;
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sec5 {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sec5 h4 {
+  text-align: center;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+/* set image to center */
+.sec5 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.volunteer5 {
+  background-color: #fe982d;
+  color: white;
+}
+
+/* for small screen size */
+@media screen and (max-width: 550px) {
+  #section5 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+  }
+}
+
+/* end of section5 */
+
+/* ------------------------------------------------ */
+/* Footer styles */
+/* ------------------------------------------------ */
+
+.footer { 
+  background-color: #363434;
+  color: white; 
+  padding: 50px 80px 10px; 
+}
+
+.footer a:link, .footer a:visited { 
+  color: #FFFFFF; 
+  text-decoration: none; 
+}
+
+.footer a:hover, .footer a:active { 
+  color: #FF8121; 
+}
+
+.foot-title { 
+  font: 300 1.5em "Dosis", sans-serif;
+  margin: 0px; 
+  margin-bottom: 7px;
+}
+
+.underbar { 
+  width: 50px; 
+  border-bottom: 2px solid #FFFFFF; }
+
+.foot-content { 
+  margin-top: 20px; 
+}
+
+.foot-content, .design-info { 
+  font: 400 1em "Open Sans", sans-serif; 
+}
+
+.foot-about, .foot-links, .foot-question { 
+  float: left; 
+}
+
+.foot-about { 
+  width: 40%; 
+}
+
+.foot-links { 
+  width: 20%;
+}
+
+.foot-question { 
+  width: 40%; 
+}
+
+.foot-about .foot-content { 
+  width: 60%; 
+}
+
+.clear::after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
+.foot-info { 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+#team-stockholm, .material-icons { 
+  color: #FF8121; 
+}
+
+/* RESPONSIVE footer */
+
+/*For tablets*/
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .foot-about { 
+    width: 35%; 
+  }
+
+  .foot-links { 
+    width: 20%;
+  }
+
+  .foot-question { 
+    width: 45%; 
+  }
+
+}
+
+/*For small displays and smartphones*/
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .foot-about, .foot-links, .foot-question, .foot-about .foot-content { 
+    float: none; 
+    width: 100%;
+  }
+}
+/*For smartphones min-width: 700px up to max-width: 750px and thereabout*/
+@media only screen and (max-width: 750px) {
+#img {
+     float: left;
+     margin: 12px 0 0 12px;
+     width: 40%;
+ }   
+/* Main navi */
+#li {
+   margin: 1px 0 0 1px;
+   padding: 5px;
+   display: flex;
+   font-size: 20px;
+   float: left;
+}
+.main-nav {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  float: left;
+  margin-left: 1px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 32%;
+}
+#donateBtn {
+   height: 15px;
+   width: 2px;
+   margin: -5px;
+}
+header #donateBtn {
+  font-size: 10px;
+  margin: -10px 2px 0 1px;
+  color:white;
+  width: 45px;
+  height: 14px;
+  border-radius: 40px;
+}
+.header-text-box {
+  position: absolute;
+  width: 97%;
+  top: 45%:
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+  text-align: center;
+}
+/* ----------------------------------------------- */
+/* VISION AND DONATION */
+/* ----------------------------------------------- */
+
+.section-vision {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.vision-3-boxes {
+  width: 250px;
+  height: 200px;
+  margin-top: -60px;
+}
+
+.vision {
+  width: 50%;
+  height: 150px;
+}
+
+.donate {
+  width: 30%;
+  height: 150px;
+}
+
+.volunteer {
+  width: 30%;
+  height: 150px;
+}
+
+.vision h3 {
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: 50%;
+}
+
+.vision-notes {
+  line-height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 0.6rem;
+}
+
+.donate h3 {
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: 50%;
+}
+
+.donate-notes {
+  line-height: 85%;
+  width: 65%;
+  margin-left: 15%;
+  font-size: 0.6rem;
+}
+
+.donate-button {
+  width: 80%;
+  height: 10%;
+  background-color: #fff;
+  margin: 10px 0 0 15%;
+}
+
+.donate-button p {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #000;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+.volunteer h3 {
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: 50%;
+}
+
+.volunteer-notes {
+  line-height: 85%;
+  width: 65%;
+  margin-left: 15%;
+  font-size: 0.6rem;
+}
+
+.volunteer-button {
+  width: 80%;
+  height: 10%;
+  background-color: #fff;
+  margin: 10px 0 0 15%;
+}
+
+.volunteer-button p {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #000;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+/* 1 */
+/* ABOUT US */
+/* ----------------------------------------------- */
+
+.section-about-us {
+  width: 100%;
+  height: 400px;
+  margin-top: -10px;
+}
+
+.about-us {
+  width: 60%;
+  height: 100%;
+}
+
+.about-us h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.about-us-notes {
+  line-height: 130%;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.about-us-button {
+  width: 150px;
+  height: 50px;
+}
+
+.about-us-button p {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 1rem;
+}
+
+.about-us-img {
+  float: left;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+}
+
+.about-main-img {
+  width: 100%;
+  margin: -200px 0 0;
+  height: 200px;
 }
